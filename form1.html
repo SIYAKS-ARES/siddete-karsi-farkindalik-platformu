@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form oluştur</title>
     <style>
@@ -36,8 +36,8 @@
     color: white;
     margin: 0;
 }
-        .kutu2{ 
-                    
+        .kutu2{
+
                     background-color: purple;
                     width: 100%;
                     height: 70px;
@@ -46,21 +46,21 @@
                     left: 0;
                     margin: 0;
                     padding: 0;
-                  
-                    
-                    
+
+
+
                 }
-       /*.kutu1{
+        /*.kutu1{
             background-color: #060606;
             width :100px;
             height: 100vh;
-            position: fixed; /* Kutu sayfanın sol tarafına sabitlenir 
+            position: fixed; /* Kutu sayfanın sol tarafına sabitlenir
             top: 0;
             left: 0;
             margin: 0;
-            padding: 0; 
-           
-        } 
+            padding: 0;
+
+        }
         */
         .bg{
             /* Full height */
@@ -68,8 +68,8 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: 70% auto;
-            width: 620px;  
-             height: 517px;
+            width: 620px;
+            height: 517px;
             padding-bottom: 1cm;
             margin: 1cm auto;
             border: 1px #D3D3D3 solid;
@@ -77,7 +77,7 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
             color-adjust: exact !important;                 /*Firefox*/
- 
+
         }
         .back-button {
             position: absolute;
@@ -89,56 +89,53 @@
 <body>
     <div class="kutu1">
     </div>
-    
+
     <div class= "kutu2">
- <img src="resim/kadinCinayet.jpeg" alt="icon"  class="icon" >
+<img src="resim/kadinCinayet.jpeg" alt="icon"  class="icon" >
     </div>
-    
     <br>
     <br>
-    
     <div class="bg">
-     <center><h2 style="color: red;">Şiddete uğruyor musunuz?</h2></center>
-     <br>
+    <center><h2 style="color: red;">Şiddete uğruyor musunuz?</h2></center>
+    <br>
     <form>
-     <div class="form-group row " >
-        <label for="ad" class="col-4 col-form-label" >İsim:</label> 
+    <div class="form-group row " >
+        <label for="ad" class="col-4 col-form-label" >İsim:</label>
         <div class="col-8">
-            <input id="ad" name="ad" type="text"  required="required" class="form-control"> 
-        </div>
-    </div>
-    
-     <div class="form-group row">
-        <label for="text" class="col-4 col-form-label">Tarih:</label> 
-        <div class="col-8">
-            <input type="date" name="date" ></input>
-            
+            <input id="ad" name="ad" type="text"  required="required" class="form-control">
         </div>
     </div>
     <div class="form-group row">
-        <label for="soyad" class="col-4 col-form-label">Soyisim:</label> 
+        <label for="text" class="col-4 col-form-label">Tarih:</label>
         <div class="col-8">
-            <input id="soyad" name="soyad" type="text"  required="required" class="form-control"> 
-               
+            <input type="date" name="date" ></input>
+
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="soyad" class="col-4 col-form-label">Soyisim:</label>
+        <div class="col-8">
+            <input id="soyad" name="soyad" type="text"  required="required" class="form-control">
+
         </div>
     </div>
 
     <div class="form-group row">
-        <label for="sehir" class="col-4 col-form-label">Şehir:</label> 
+        <label for="sehir" class="col-4 col-form-label">Şehir:</label>
         <div class="col-8">
-           <input id="sehir" name="sehir" type="text"  required="required" class="form-control"> 
-                
+        <input id="sehir" name="sehir" type="text"  required="required" class="form-control">
+
         </div>
     </div>
 
     <div class="form-group row">
         <label for="tel" class="col-4 col-form-label">Telefon numarası:
-            
-        </label> 
-        
+
+        </label>
+
         <div class="col-8">
-            <input id="tel" name="tel" type="tel" placeholder="0(555-222-23-23)" required="required" class="form-control"> 
-                
+            <input id="tel" name="tel" type="tel" placeholder="0(555-222-23-23)" required="required" class="form-control">
+
         </div>
     </div>
     <div class="form-group">
@@ -150,8 +147,8 @@
             <button  type="submit" class="btn btn-primary">İlerle</button>
         </div>
     </div>
-        
-            
+
+
     </div>
     </div>
 </form>

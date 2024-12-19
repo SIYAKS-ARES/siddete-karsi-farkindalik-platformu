@@ -16,18 +16,18 @@
             margin: 0;
             background-color: #F4F3F4;
         }
-       
+
         .bg {
             /* Full height */
             /* Center and scale the image nicely */
             background-color: #ffff;
-            
+
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             width: 21cm;
             padding: 2cm;
-           margin: auto;
+            margin: auto;
             border: 1px #D3D3D3 solid;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -39,8 +39,8 @@
         background-color: purple;
         width: 100%;
         height: 90px;
-       
-        
+
+
       }
       .icon {
         display: flex; /* Flexbox kullanımı */
@@ -71,45 +71,45 @@
 </head>
 <body>
     <div class="kutu2">
-      
-        <img src="resim/kadinCinayet.jpeg" alt="icon" class="icon" 
+
+        <img src="resim/kadinCinayet.jpeg" alt="icon" class="icon"
         />
       </div>
       <br>
         <br>
         <br>
-         <div class="container  ">
+        <div class="container  ">
     <div class="bg" >
         <center> <h2 style="color:rgb(219, 33, 33)"> Şiddete Uğruyor Musunuz?</h2> </center>
         <br>
         <br>
         <form >
             <div class="form-group row ">
-                <label for="Musteri" class="col-4 col-form-label">İsim:</label> 
+                <label for="Musteri" class="col-4 col-form-label">İsim:</label>
                 <div class="col-8">
                     <input id="text" name="kullanici" type="text" aria-describedby="MusteriHelpBlock" placeholder="İsim giriniz" required="required" class="form-control"> 
-                        
+
                 </div>
             </div>
             <div class="form-group row my-4">
-                <label for="Musteri" class="col-4 col-form-label">Soyisim:</label> 
+                <label for="Musteri" class="col-4 col-form-label">Soyisim:</label>
                 <div class="col-8">
                     <input id="text" name="kullanici" type="text" aria-describedby="MusteriHelpBlock" placeholder=" Soyisim giriniz" required="required" class="form-control"> 
-                        
+
                 </div>
 
-            
-            
+
+
             </div>
-             <div class="form-group row my-4">
-                <label for="text" class="col-4 col-form-label">Başvuru Tarihi:</label> 
+            <div class="form-group row my-4">
+                <label for="text" class="col-4 col-form-label">Başvuru Tarihi:</label>
                 <div class="col-8">
                     <input type="date" name="date" ></input>
-                    
+
                 </div>
             </div>
             <div class="form-group row my-4">
-              <label for="kullanici" class="col-4 col-form-label">Email Adres:</label> 
+              <label for="kullanici" class="col-4 col-form-label">Email Adres:</label>
               <div class="col-8">
                 <input
                 type="email"
@@ -117,11 +117,11 @@
                 id="email"
                 name="email"
                 required
-              /> 
-                      
+              />
+
               </div>
-    
-            
+
+
             </div>
             <div class="form-group row my-4">
                 <label for="citySelect" class="col-4 col-form-label" >Şehir:</label>
@@ -137,7 +137,7 @@
                   .then(response => response.json())  // JSON olarak parse ediyoruz
                   .then(data => {
                     const selectElement = document.getElementById('citySelect');
-              
+
                     // Şehirleri select'e ekliyoruz
                     data.cities.forEach(city => {
                       const option = document.createElement('option');
@@ -150,30 +150,30 @@
                     console.error("Bir hata oluştu:", error);
                   });
               </script>
-              
+
             <div class="form-group my-4">
                 <label for="exampleFormControlTextarea1">Şikayet Metni</label>
                 <textarea name="aciklama" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-    
-    
+
+
             <div class="form-group row">
                     <button style="margin-bottom: 5px;"
                     type="submit"
-                    class="btn btn-primary w-100"  onclick="window.location.href='geriBildirim.html'"> 
+                    class="btn btn-primary w-100"  onclick="window.location.href='geriBildirim.html'">
                     <i>Kayıt Ol</i>
                   </button>
-                 
-                  
+
+
                   <button
                   type="reset"
-                  class="btn btn-primary w-100"> 
+                  class="btn btn-primary w-100">
                   <i>Temizle</i>
                 </button>
                 </div>
             </div>
         </form>
-        
+
     </div>
 </div>
     <br>
