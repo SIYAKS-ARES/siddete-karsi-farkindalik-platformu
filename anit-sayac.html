@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şiddet Karşıtı Anıtlar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/data/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
     <header>
@@ -33,18 +33,28 @@
             <h2 class="text-center mb-4">Şiddet Kurbanları Anıtı</h2>
             <p class="text-center mb-5">Bu sayfada, şiddetin farklı türlerinde hayatını kaybeden kişilerin anısına adanmış sembolik anıtlar bulunmaktadır. Her bir anıt, şiddete karşı farkındalığı artırmayı ve kayıplarımızı hatırlatmayı amaçlar.</p>
         </section>
-        <section id="anitlar-section">
-        <div class="row" id="anitlar-container">
-            <!-- Anıtlar buraya dinamik olarak eklenebilir -->
+        <section id="anitlar-section" class="text-center">
+        <div id="anit-sayac-container">
+            <div id="sayac-container" class="d-inline-block">
+            <span id="sayac-deger" style="font-size: 6rem;">0</span>
+            </div>
+        <p class="mt-3">Şiddet sonucu hayatını kaybedenlerin sayısı.</p>
+        </div>
+        </section>
+    <section class="mt-5">
+            <h3 class="text-center mb-4">Anıtlar</h3>
+            <div class="row" id="anitlar-container">
+                <!-- Anıtlar buraya dinamik olarak eklenecek -->
             </div>
         </section>
+
 
     </main>
 
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>© 2024 Şiddete Karşı Farkındalık Platformu</p>
     </footer>
-    <script src="/js/anit-sayac.js"></script>
+    <script src="/public/scripts/anit-sayac.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

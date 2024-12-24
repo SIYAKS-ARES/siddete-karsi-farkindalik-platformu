@@ -4,14 +4,14 @@
         "isim": "Özgecan Aslan",
         "tarih": "2015-02-11",
         "aciklama": "Mersin'de hunharca katledilen üniversite öğrencisi.",
-        "resim": "/images/ozgecan.jpg"
+        "resim": "/public/data/images/ozgecan.jpg"
     },
     {
         "id": 2,
         "isim": "Emine Bulut",
         "tarih": "2019-08-18",
         "aciklama": "Eski eşi tarafından çocuğunun gözü önünde katledilen kadın.",
-        "resim": "/images/emine.jpg"
+        "resim": "/public/data/images/emine.jpg"
     },
 
     {  "BU İKİ FARKLI ŞEKİLDE DE YAPILABİLİR!":1 },
