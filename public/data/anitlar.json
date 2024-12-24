@@ -11,7 +11,22 @@
         "isim": "Emine Bulut",
         "tarih": "2019-08-18",
         "aciklama": "Eski eşi tarafından çocuğunun gözü önünde katledilen kadın.",
-        "resim":"/images/emine.jpg"
+        "resim": "/images/emine.jpg"
+    },
+
+    {  "BU İKİ FARKLI ŞEKİLDE DE YAPILABİLİR!":1 },
+
+    {
+        "name": "Ayşe Yılmaz",
+        "age": 32,
+        "city": "İstanbul",
+        "date": "2023-01-15"
+    },
+    {
+        "name": "Fatma Kaya",
+        "age": 28,
+        "city": "Ankara",
+        "date": "2023-03-20"
     }
 
 ]
