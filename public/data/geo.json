@@ -1,0 +1,35 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [35.3213, 37.0]  // Adana'nın enlem ve boylam koordinatları
+        },
+        "properties": {
+          "il": "Adana",
+          "bolge": "Akdeniz Bölgesi",
+          "olay": 15,
+          "olu": 10,
+          "yarali": 8
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [37.7721, 37.7535]  // Adıyaman'ın enlem ve boylam koordinatları
+        },
+        "properties": {
+          "il": "Adıyaman",
+          "bolge": "Güneydoğu Anadolu Bölgesi",
+          "olay": 10,
+          "olu": 7,
+          "yarali": 5
+        }
+      }
+      // Diğer şehirler...
+    ]
+  }
+  
