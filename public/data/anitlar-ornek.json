@@ -1,0 +1,380 @@
+[
+    {
+        "id": 1,
+        "isim": "Özgecan Aslan",
+        "tarih": "2015-02-11",
+        "aciklama": "Mersin'de hunharca katledilen üniversite öğrencisi.",
+        "yas": 20
+    },
+    {
+        "id": 2,
+        "isim": "Emine Bulut",
+        "tarih": "2019-08-18",
+        "aciklama": "Eski eşi tarafından çocuğunun gözü önünde katledilen kadın.",
+        "yas": 38
+    },
+    {
+        "id": 3,
+        "isim": "Münevver Karabulut",
+        "tarih": "2009-03-03",
+        "aciklama": "İstanbul'da vahşice öldürülen genç kız.",
+        "yas": 17
+    },
+    {
+        "id": 4,
+        "isim": "Sıdıka Sarıoğlu",
+        "tarih": "2019-01-08",
+        "aciklama": "Eşinden ayrılmak istediği için eşi tarafından öldürülen kadın.",
+        "yas": 46
+    },
+    {
+        "id": 5,
+        "isim": "Şule Çet",
+        "tarih": "2018-05-29",
+        "aciklama": "Ankara'da bir plazanın 20. katından düşerek şüpheli bir şekilde hayatını kaybeden genç kadın.",
+        "yas": 23
+    },
+    {
+        "id": 6,
+        "isim": "Hande Kader",
+        "tarih": "2016-08-12",
+        "aciklama": "İstanbul'da trans olduğu için hunharca katledilen kadın.",
+        "yas": 22
+    },
+    {
+        "id": 7,
+        "isim": "Nevin Yıldırım",
+        "tarih": "2012-08-29",
+        "aciklama": "Tecavüze uğradığı ve şiddet gördüğü gerekçesiyle kendisini istismar eden kişiyi öldüren kadın.",
+        "yas": 30
+    },
+    {
+        "id": 8,
+        "isim": "Ayşe Tuba Arslan",
+        "tarih": "2021-10-26",
+        "aciklama": "Daha önce defalarca şikayet etmesine rağmen, eski kocası tarafından öldürülen kadın.",
+        "yas": 45
+    },
+    {
+        "id": 9,
+        "isim": "Ceren Damar Şenel",
+        "tarih": "2019-01-02",
+        "aciklama": "Araştırma görevlisi olduğu üniversitede öğrencisi tarafından öldürülen kadın.",
+        "yas": 27
+    },
+    {
+        "id": 10,
+        "isim": "Nadira Kadirova",
+        "tarih": "2019-09-23",
+        "aciklama": "İstanbul'da şüpheli bir şekilde hayatını kaybeden Özbek asıllı temizlik işçisi.",
+        "yas": 24
+    },
+    {
+        "id": 11,
+        "isim": "Rabia Naz Vatan",
+        "tarih": "2018-04-13",
+        "aciklama": "Giresun'da evinin önünde yaralı halde bulunan ve kaldırıldığı hastanede hayatını kaybeden küçük kız çocuğu.",
+        "yas": 11
+    },
+    {
+        "id": 12,
+        "isim": "Seher Çetin",
+        "tarih": "2023-11-05",
+        "aciklama": "Eski kocası tarafından, boşanmayı kabul etmediği için öldürülen kadın.",
+        "yas": 40
+    },
+    {
+        "id": 13,
+        "isim": "Gülay Aslan",
+        "tarih": "2022-08-02",
+        "aciklama": "Tartıştığı erkek arkadaşı tarafından öldürülen genç kadın.",
+        "yas": 25
+    },
+    {
+        "id": 14,
+        "isim": "Gamze Çakır",
+        "tarih": "2023-02-27",
+        "aciklama": "Nişanlısı tarafından, kıskançlık sebebiyle öldürülen genç kadın.",
+        "yas": 28
+    },
+    {
+        "id": 15,
+        "isim": "Zeynep Şenpınar",
+        "tarih": "2020-05-26",
+        "aciklama": "Tartıştığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 25
+    },
+    {
+        "id": 16,
+        "isim": "Dilara Gül",
+        "tarih": "2021-04-17",
+        "aciklama": "Kardeşi tarafından öldürülen kadın.",
+        "yas": 32
+    },
+    {
+        "id": 17,
+        "isim": "Aslıhan Sürücü",
+        "tarih": "2023-04-23",
+        "aciklama": "Eski eşi tarafından öldürülen kadın.",
+        "yas": 38
+    },
+    {
+        "id": 18,
+        "isim": "Melek Aslan",
+        "tarih": "2022-11-24",
+        "aciklama": "Boşanma aşamasında olduğu kocası tarafından öldürülen kadın.",
+        "yas": 36
+    },
+    {
+        "id": 19,
+        "isim": "Sibel Çelik",
+        "tarih": "2023-05-11",
+        "aciklama": "Eski nişanlısı tarafından öldürülen kadın.",
+        "yas": 30
+    },
+    {
+        "id": 20,
+        "isim": "Ferda Sayıner",
+        "tarih": "2022-09-18",
+        "aciklama": "Kocası tarafından öldürülen kadın.",
+        "yas": 41
+    },
+    {
+        "id": 21,
+        "isim": "Ayşe Karakaş",
+        "tarih": "2023-06-10",
+        "aciklama": "Birlikte yaşadığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 29
+    },
+    {
+        "id": 22,
+        "isim": "Gülşen Kılınç",
+        "tarih": "2023-07-04",
+        "aciklama": "Eski sevgilisi tarafından öldürülen kadın.",
+        "yas": 27
+    },
+    {
+        "id": 23,
+        "isim": "Fatma Durmaz",
+        "tarih": "2022-06-14",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 43
+    },
+    {
+        "id": 24,
+        "isim": "Ebru Erdem",
+        "tarih": "2023-03-02",
+        "aciklama": "Tartıştığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 24
+    },
+    {
+        "id": 25,
+        "isim": "Nimet Karataş",
+        "tarih": "2023-08-12",
+        "aciklama": "Kocası tarafından öldürülen kadın.",
+        "yas": 48
+    },
+    {
+        "id": 26,
+        "isim": "Songül Çetinkaya",
+        "tarih": "2022-10-26",
+        "aciklama": "Eski eşi tarafından öldürülen kadın.",
+        "yas": 39
+    },
+    {
+        "id": 27,
+        "isim": "Duygu Delen",
+        "tarih": "2020-08-17",
+        "aciklama": "Gaziantep'te kaldığı evin balkonundan düşerek şüpheli bir şekilde ölen genç kadın.",
+        "yas": 17
+    },
+    {
+        "id": 28,
+        "isim": "Selva Sağlam",
+        "tarih": "2023-09-05",
+        "aciklama": "Birlikte yaşadığı erkek tarafından öldürülen kadın.",
+        "yas": 34
+    },
+    {
+        "id": 29,
+        "isim": "Şeyma Yıldız",
+        "tarih": "2023-01-10",
+        "aciklama": "Eski eşi tarafından öldürülen kadın.",
+        "yas": 42
+    },
+    {
+        "id": 30,
+        "isim": "Filiz Tekin",
+        "tarih": "2023-02-08",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 35
+    },
+    {
+        "id": 31,
+        "isim": "İrem Demir",
+        "tarih": "2023-03-14",
+        "aciklama": "Eski erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 28
+    },
+    {
+        "id": 32,
+        "isim": "Hatice Kılınç",
+        "tarih": "2023-04-01",
+        "aciklama": "Boşanma aşamasında olduğu eşi tarafından öldürülen kadın.",
+        "yas": 46
+    },
+    {
+        "id": 33,
+        "isim": "Meltem Çelik",
+        "tarih": "2023-04-18",
+        "aciklama": "Kocası tarafından öldürülen kadın.",
+        "yas": 40
+    },
+    {
+        "id": 34,
+        "isim": "Esra Çevik",
+        "tarih": "2023-05-22",
+        "aciklama": "Eski eşi tarafından öldürülen kadın.",
+        "yas": 37
+    },
+    {
+        "id": 35,
+        "isim": "Pınar Gültekin",
+        "tarih": "2020-07-21",
+        "aciklama": "Muğla'da vahşice katledilen üniversite öğrencisi.",
+        "yas": 27
+    },
+    {
+        "id": 36,
+        "isim": "Meryem Tan",
+        "tarih": "2023-06-08",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 49
+    },
+    {
+        "id": 37,
+        "isim": "Gülcan İşler",
+        "tarih": "2023-07-15",
+        "aciklama": "Birlikte yaşadığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 33
+    },
+    {
+        "id": 38,
+        "isim": "Hatice Demir",
+        "tarih": "2023-08-09",
+        "aciklama": "Eski kocası tarafından öldürülen kadın.",
+        "yas": 41
+    },
+    {
+        "id": 39,
+        "isim": "Zeynep Kılınç",
+        "tarih": "2023-09-12",
+        "aciklama": "Boşanma aşamasında olduğu kocası tarafından öldürülen kadın.",
+        "yas": 38
+    },
+    {
+        "id": 40,
+        "isim": "Elif Aydemir",
+        "tarih": "2023-10-07",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 47
+    },
+    {
+        "id": 41,
+        "isim": "Ayten Kara",
+        "tarih": "2023-11-18",
+        "aciklama": "Tartıştığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 31
+    },
+    {
+        "id": 42,
+        "isim": "Dilek Aktaş",
+        "tarih": "2023-12-04",
+        "aciklama": "Eski sevgilisi tarafından öldürülen kadın.",
+        "yas": 26
+    },
+    {
+        "id": 43,
+        "isim": "Gamze Kaya",
+        "tarih": "2023-01-20",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 44
+    },
+    {
+        "id": 44,
+        "isim": "Sevgi Şen",
+        "tarih": "2023-02-23",
+        "aciklama": "Birlikte yaşadığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 35
+    },
+    {
+        "id": 45,
+        "isim": "Nilgün Yılmaz",
+        "tarih": "2023-03-25",
+        "aciklama": "Eski kocası tarafından öldürülen kadın.",
+        "yas": 42
+    },
+    {
+        "id": 46,
+        "isim": "Fadime Özdemir",
+        "tarih": "2023-04-29",
+        "aciklama": "Kocası tarafından öldürülen kadın.",
+        "yas": 48
+    },
+    {
+        "id": 47,
+        "isim": "Nurgül Çakır",
+        "tarih": "2023-05-17",
+        "aciklama": "Tartıştığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 29
+    },
+    {
+        "id": 48,
+        "isim": "Hamide Yücel",
+        "tarih": "2023-06-21",
+        "aciklama": "Eski eşi tarafından öldürülen kadın.",
+        "yas": 40
+    },
+    {
+        "id": 49,
+        "isim": "Gülizar Demir",
+        "tarih": "2023-07-29",
+        "aciklama": "Eski sevgilisi tarafından öldürülen kadın.",
+        "yas": 31
+    },
+    {
+        "id": 50,
+        "isim": "Aylin Kaya",
+        "tarih": "2023-08-24",
+        "aciklama": "Birlikte yaşadığı erkek arkadaşı tarafından öldürülen kadın.",
+        "yas": 33
+    },
+    {
+        "id": 51,
+        "isim": "Aysun Gündüz",
+        "tarih": "2023-09-18",
+        "aciklama": "Eski nişanlısı tarafından öldürülen kadın.",
+        "yas": 29
+    },
+    {
+        "id": 52,
+        "isim": "Sultan Demir",
+        "tarih": "2023-10-28",
+        "aciklama": "Eşi tarafından öldürülen kadın.",
+        "yas": 46
+    },
+    {
+        "id": 53,
+        "isim": "Esin Şahin",
+        "tarih": "2023-11-12",
+        "aciklama": "Boşanma aşamasında olduğu eşi tarafından öldürülen kadın.",
+        "yas": 39
+    },
+    {
+        "id": 54,
+        "isim": "Leyla Yılmaz",
+        "tarih": "2023-12-09",
+        "aciklama": "Eski sevgilisi tarafından öldürülen kadın.",
+        "yas": 27
+    }
+]

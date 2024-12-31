@@ -20,31 +20,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const anitElement = document.createElement('div');
         anitElement.classList.add('col-md-2', 'mb-4'); // Sütun genişliği ayarlandı
 
-        let anitHTML = `
-                <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">${anit.isim}</h5>
-                    <p class="card-text">${anit.aciklama}</p>
-                    <p class="card-text">Yaş: ${anit.yas}</p>
-                    `;
+        const formattedDate = formatDate(anit.Date);
 
-        if (anit.tarih) {
-            const formattedDate = formatDate(anit.tarih);
-            anitHTML += `<p class="card-text">Tarih: ${formattedDate}</p>`;
-        }
-        anitHTML += `
-                        </div>
-                        </div>
-                    `;
+
+        let anitHTML = `
+        <div class="card h-100">
+            <div class="card-body">
+            <h5 class="card-title">${anit.Name}</h5>
+            <p class="card-text">Yaş: ${anit.Age}</p>
+            <p class="card-text">Tarih: ${formattedDate}</p>
+            <a href="${anit.Link}" class="btn btn-dark btn-sm btn-block" target="_blank">Detaylar</a>
+            </div>
+        </div>
+        `;
+
         anitElement.innerHTML = anitHTML;
         return anitElement;
     };
+
     // Tarih formatlama fonksiyonu
     function formatDate(dateString) {
-        const date = new Date(dateString);
-        const day = String(date.getDate()).padStart(2, '0');
-        const month = String(date.getMonth() + 1).padStart(2, '0');
-        const year = date.getFullYear();
-        return `${day}.${month}.${year}`;
+        const parts = dateString.split('.');
+        if (parts.length === 3) {
+            const day = parts[0];
+            const month = parts[1];
+            const year = parts[2];
+            return `${day}.${month}.${year}`;
+        }
+        return dateString; // Eğer format uygun değilse olduğu gibi döndür
     }
 });

@@ -91,6 +91,19 @@ footer {
 
 /* Anıt Listesi Stilleri */
 #anitlar-section .card img {
+
     height: 150px;
     object-fit: cover;
+}
+/* Kartları düzenle */
+#anitlar-section .card {
+    text-align: center; /* İçeriği ortala */
+    display: flex; /* Flexbox kullan */
+    flex-direction: column; /* Dikey düzen */
+    justify-content: space-between;
+}
+
+/* Butonun stilini düzenle */
+#anitlar-section .card .btn {
+    margin-top: 10px; /* Buton ile metin arasında boşluk */
 }
