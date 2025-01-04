@@ -580,13 +580,7 @@
       { il: "Isparta", olay: 6, olu: 4, yarali: 3 },
       { il: "İzmir", olay: 25, olu: 18, yarali: 12 },
       { il: "Hakkâri", olay: 12, olu: 5, yarali: 7 },
-      {
-        il: "Kahramanmaraş",
-        bolge: "Akdeniz Bölgesi",
-        olay: 12,
-        olu: 8,
-        yarali: 6,
-      },
+      {il: "Kahramanmaraş", bolge: "Akdeniz Bölgesi", olay: 12, olu: 8, yarali: 6,},
       { il: "Karabük", olay: 4, olu: 3, yarali: 2 },
       { il: "Karaman", olay: 4, olu: 2, yarali: 2 },
       { il: "Kars", olay: 5, olu: 3, yarali: 3 },
@@ -631,7 +625,6 @@
       { il: "İstanbul (Avrupa)", olay: 145, olu: 85, yarali: 60 },
     ];
 
-    // Türkçe karakter uyumu için normalize fonksiyonu
     function normalizeName(name) {
       const turkishMap = {
         ç: "c",
@@ -652,7 +645,6 @@
         .toLowerCase();
     }
 
-    // Tooltip elementi
     const tooltip = document.createElement("div");
     tooltip.style.position = "absolute";
     tooltip.style.background = "linear-gradient(135deg, #ff7e5f, #feb47b)";
@@ -667,17 +659,14 @@
     tooltip.style.fontSize = "14px";
     document.body.appendChild(tooltip);
 
-    // Şehir path'lerini seç
     const paths = document.querySelectorAll("g[data-iladi]");
 
-    // Şehir path'lerine event listener ekle
     paths.forEach((path) => {
       const cityName = path.getAttribute("data-iladi");
       const cityInfo = cityData.find(
         (city) => normalizeName(city.il) === normalizeName(cityName)
       );
 
-      // Eğer eşleşen veri varsa tooltip göster
       if (cityInfo) {
         path.addEventListener("mouseenter", (e) => {
           tooltip.style.display = "block";
@@ -700,7 +689,6 @@
           tooltip.style.display = "none";
         });
 
-        // Şehir rengini olay sayısına göre ayarla
         const olaySayisi = cityInfo.olay;
         if (olaySayisi > 15) {
           path.querySelector("path").style.fill = "#ff4d4d"; // Kırmızı

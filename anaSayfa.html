@@ -1,429 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-    <title>AnaSayfa</title>
-    <link rel="stylesheet" href="resim/kadinCinayet.jpeg" type="jpeg" />
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: #f4f3f4;
-      }
 
-      .bgg {
-        background-color: #d9d9d9;
-        width: 100%;
-        height: 50px;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <title>AnaSayfa</title>
+  <link rel="stylesheet" href="resim/kadinCinayet.jpeg" type="jpeg" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #f4f3f4;
+    }
 
-        top: 0;
-        left: 0;
-        margin-top: 10px;
-        padding: 0;
-      }
-      .btn-light {
-        background-color: #e3e3e2;
-        border: none;
-        color: purple;
-        border-radius: 25px;
-        /* padding: 10px;*/
-        font-size: 1.1rem;
-        /* width: 200px;  Butonun tam genişliğini sağladık */
-      }
-      .kutu2 {
-        background-color: purple;
-        width: 100%;
-        height: 90px;
-        top: 0;
-        left: 0;
-        margin: 0;
-        padding: 0;
-      }
-      .icon {
-        display: flex; /* Flexbox kullanımı */
-        align-items: center; /* Dikeyde ortalama */
-        justify-content: center; /* Yatayda ortalama */
-        width: 85px; /* İkon boyutu */
-        height: 90px; /* Konteyner yüksekliği */
-        margin: auto; /* Tüm kenarlardan eşit mesafede ortalar */
-        margin-top: 5;
-      }
+    .bgg {
+      background-color: #d9d9d9;
+      width: 100%;
+      height: 50px;
 
-      .btn-dark:hover {
-        background-color: #e3e3e2;
-      }
-      .content-wrapper {
-        padding-top: 30px; /* Kutu2'nin yüksekliği kadar boşluk ekler */
-      }
-      .carousel-item img {
-        height: 400px; /* Slider fotoğraf yüksekliği */
-        object-fit: cover; /* Görseli uygun boyutta kırpar */
-      }
-      .btn-dark {
-        background-color: #800080;
-        border: none;
-        border-radius: 25px;
-      }
-      .btn-dark:hover {
-        background-color: #eccdec;
-      }
-      .content-wrapper1 {
-        padding-top: 7px; /* Kutu2'nin yüksekliği kadar boşluk ekler */
-      }
-      footer {
-        padding: 20px 0;
-        background-color: #800080;
-        color: #ffffff;
-        text-align: center;
-      }
-      #secondCarousel .carousel-item img {
-        height: 550px; /* İstediğiniz yükseklik */
-        /*  object-fit: cover; Görseli taşıma ve kesme oranı */
-        width: 400 px;
-      }
+      top: 0;
+      left: 0;
+      margin-top: 10px;
+      padding: 0;
+    }
 
-      .social-icons-fixed a:hover {
-        transform: scale(1.1) !important;
-      }
+    .btn-light {
+      background-color: #e3e3e2;
+      border: none;
+      color: purple;
+      border-radius: 25px;
+      /* padding: 10px;*/
+      font-size: 1.1rem;
+      /* width: 200px;  Butonun tam genişliğini sağladık */
+    }
 
-      .social-icons-fixed .fa-instagram:hover {
-        color: #e1306c !important;
-      }
+    .kutu2 {
+      background-color: purple;
+      width: 100%;
+      height: 90px;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+    }
 
-      .social-icons-fixed .fa-facebook:hover {
-        color: #4267b2 !important;
-      }
+    .icon {
+      display: flex;
+      /* Flexbox kullanımı */
+      align-items: center;
+      /* Dikeyde ortalama */
+      justify-content: center;
+      /* Yatayda ortalama */
+      width: 85px;
+      /* İkon boyutu */
+      height: 90px;
+      /* Konteyner yüksekliği */
+      margin: auto;
+      /* Tüm kenarlardan eşit mesafede ortalar */
+      margin-top: 5;
+    }
 
-      .social-icons-fixed .fa-twitter:hover {
-        color: #1da1f2 !important;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Sabit Sosyal Medya İkonları -->
-    <div class="social-icons-fixed">
-      <a href="https://instagram.com" target="_blank"
-        ><i class="fab fa-instagram"></i
-      ></a>
-      <a href="https://facebook.com" target="_blank"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-      <a href="https://twitter.com" target="_blank"
-        ><i class="fab fa-twitter"></i
-      ></a>
+    .btn-dark:hover {
+      background-color: #e3e3e2;
+    }
+
+    .content-wrapper {
+      padding-top: 30px;
+      /* Kutu2'nin yüksekliği kadar boşluk ekler */
+    }
+
+    .carousel-item img {
+      height: 400px;
+      /* Slider fotoğraf yüksekliği */
+      object-fit: cover;
+      /* Görseli uygun boyutta kırpar */
+    }
+
+    .btn-dark {
+      background-color: #800080;
+      border: none;
+      border-radius: 25px;
+    }
+
+    .btn-dark:hover {
+      background-color: #eccdec;
+    }
+
+    .content-wrapper1 {
+      padding-top: 7px;
+      /* Kutu2'nin yüksekliği kadar boşluk ekler */
+    }
+
+    footer {
+      padding: 20px 0;
+      background-color: #800080;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    #secondCarousel .carousel-item img {
+      height: 550px;
+      /* İstediğiniz yükseklik */
+      /*  object-fit: cover; Görseli taşıma ve kesme oranı */
+      width: 400 px;
+    }
+
+    .social-icons-fixed a:hover {
+      transform: scale(1.1) !important;
+    }
+
+    .social-icons-fixed .fa-instagram:hover {
+      color: #e1306c !important;
+    }
+
+    .social-icons-fixed .fa-facebook:hover {
+      color: #4267b2 !important;
+    }
+
+    .social-icons-fixed .fa-twitter:hover {
+      color: #1da1f2 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sabit Sosyal Medya İkonları -->
+  <div class="social-icons-fixed">
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  </div>
+
+  <div class="kutu2">
+    <img src="resim/kadinCinayet.jpeg" alt="icon" class="icon" />
+    <div class="social-icons ml-auto mr-3">
+      <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+        <i class="fab fa-facebook-f fa-2x"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
     </div>
+  </div>
 
-    <div class="kutu2">
-      <img src="resim/kadinCinayet.jpeg" alt="icon" class="icon" />
-      <div class="social-icons ml-auto mr-3">
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          class="text-white mx-2"
-        >
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          class="text-white mx-2"
-        >
-          <i class="fab fa-facebook-f fa-2x"></i>
-        </a>
-        <a
-          href="https://www.twitter.com"
-          target="_blank"
-          class="text-white mx-2"
-        >
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
+  <div class="bgg">
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3e3e2">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+        style="background-color: rgba(64, 40, 40, 0.258)">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar İçeriği -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <button class="btn btn-light mx-2" onclick="window.location.href='anaSayfa.html'">
+              AnaSayfa
+            </button>
+          </li>
+
+          <li class="nav-item active">
+            <button class="btn btn-light mx-2" onclick="window.location.href='giris.html'">
+              Giriş Yap
+            </button>
+          </li>
+          <li class="nav-item active">
+            <button class="btn btn-light mx-2" onclick="window.location.href='aciklamalar.html'">
+              Açıklamalar
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-light mx-2" onclick="window.location.href='hakkimizda.html'">
+              Hakkımızda
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-light mx-2" onclick="window.location.href='anit-sayac.html'">
+              Anıt Sayaç
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-light mx-2" onclick="window.location.href='siddetHar2.html'">
+              Şiddet Haritası
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-light mx-4" onclick="window.location.href='formOlustur.html'">
+              Şiddete Uğruyor Musunuz?
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container content-wrapper">
+    <!-- Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="resim/kadinaSiddeteHayir.!.png" class="d-block w-100" alt="Kadına Şiddete Hayır" />
+        </div>
+        <div class="carousel-item">
+          <img src="resim/6284.jpg" class="d-block w-100" alt="Slider Görsel 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="resim/8-mart-emekci-kadinlar-gunu.jpg" class="d-block w-100" alt="Slider Görsel 3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-4 m-4">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card" style="width: 18rem">
+          <img src="resim/123456284.png" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">6284 Nedir?</h5>
+            <p class="card-text">6284 nasıl uygulanmalı?</p>
+            <a href="6284.html" class="btn btn-dark btn-block">İlerle</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-5">
+        <div class="card" style="width: 18rem">
+          <img src="resim/istanbulSozlesme.png" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">İstanbul Sözleşmesi Nedir?</h5>
+            <p class="card-text">İstanbul sözleşmesi nasıl uygulanmalı?</p>
+            <a href="istanbulSozlesme.html" class="btn btn-dark btn-block">İlerle</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card" style="width: 18rem; height: 29rem">
+          <img src="resim/siddetDöngüsü.png" class="card-img-top" alt="Card Image" />
+          <div class="card-body">
+            <h5 class="card-title">Geçmişten GÜnümüze Kadına Şiddet</h5>
+            <p class="card-text">Şiddet türleri</p>
+            <a href="siddetDöngüsü.html" class="btn btn-dark btn-block">İlerle</a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="bgg">
-      <nav class="navbar navbar-expand-lg" style="background-color: #e3e3e2">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          style="background-color: rgba(64, 40, 40, 0.258)"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar İçeriği -->
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='anaSayfa.html'"
-              >
-                AnaSayfa
-              </button>
-            </li>
-
-            <li class="nav-item active">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='giris.html'"
-              >
-                Giriş Yap
-              </button>
-            </li>
-            <li class="nav-item active">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='aciklamalar.html'"
-              >
-                Açıklamalar
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='hakkimizda.html'"
-              >
-                Hakkımızda
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='anit-sayac.html'"
-              >
-                Anıt Sayaç
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="btn btn-light mx-2"
-                onclick="window.location.href='siddetHar2.html'"
-              >
-                Şiddet Haritası
-              </button>
-            </li>
-            <li class="nav-item">
-              <button
-                class="btn btn-light mx-4"
-                onclick="window.location.href='formOlustur.html'"
-              >
-                Şiddete Uğruyor Musunuz?
-              </button>
-            </li>
-          </ul>
+  </div>
+  <div class="container content-wrapper1">
+    <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="resim/kadinCinayetİlk6ay.png" class="d-block w-100" alt="Kadına Şiddete Hayır" />
         </div>
-      </nav>
-    </div>
-    <div class="container content-wrapper">
-      <!-- Slider -->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="resim/kadinaSiddeteHayir.!.png"
-              class="d-block w-100"
-              alt="Kadına Şiddete Hayır"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="resim/6284.jpg"
-              class="d-block w-100"
-              alt="Slider Görsel 2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="resim/8-mart-emekci-kadinlar-gunu.jpg"
-              class="d-block w-100"
-              alt="Slider Görsel 3"
-            />
+        <div class="carousel-item">
+          <img src="resim/kapak.png" class="d-block w-100" alt="Slider Görsel 2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>2024 yılının ilk 6 ayında 205 kadın öldürüldü</h5>
+            <p>
+              2024 yılının ilk 6 ayında 205 kadın cinayeti 117 cinayet ise
+              şüpheli ölüm.
+            </p>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-target="#carouselExampleIndicators"
-          data-slide="prev"
-        >
+        <div class="carousel-item">
+          <img src="resim/slider3.jpeg" class="d-block w-100" alt="Slider Görsel 3" />
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-target="#carouselExampleIndicators"
-          data-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </button>
       </div>
     </div>
-    <div class="container">
-      <div class="row mt-4 m-4">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="resim/123456284.png"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">6284 Nedir?</h5>
-              <p class="card-text">6284 nasıl uygulanmalı?</p>
-              <a href="6284.html" class="btn btn-dark btn-block">İlerle</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-5">
-          <div class="card" style="width: 18rem">
-            <img
-              src="resim/istanbulSozlesme.png"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">İstanbul Sözleşmesi Nedir?</h5>
-              <p class="card-text">İstanbul sözleşmesi nasıl uygulanmalı?</p>
-              <a href="istanbulSozlesme.html" class="btn btn-dark btn-block"
-                >İlerle</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card" style="width: 18rem; height: 29rem">
-            <img
-              src="resim/siddetDöngüsü.png"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Geçmişten GÜnümüze Kadına Şiddet</h5>
-              <p class="card-text">Şiddet türleri</p>
-              <a href="siddetDöngüsü.html" class="btn btn-dark btn-block"
-                >İlerle</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container content-wrapper1">
-      <div id="secondCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="resim/kadinCinayetİlk6ay.png"
-              class="d-block w-100"
-              alt="Kadına Şiddete Hayır"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="resim/kapak.png"
-              class="d-block w-100"
-              alt="Slider Görsel 2"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>2024 yılının ilk 6 ayında 205 kadın öldürüldü</h5>
-              <p>
-                2024 yılının ilk 6 ayında 205 kadın cinayeti 117 cinayet ise
-                şüpheli ölüm.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="resim/slider3.jpeg"
-              class="d-block w-100"
-              alt="Slider Görsel 3"
-            />
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-target="#carouselExampleIndicators"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <br />
-    <br />
-    <footer class="footer">
-      <p>&copy; 2024 Şiddete Dur de. Tüm hakları saklıdır.</p>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <br />
+  <br />
+  <footer class="footer">
+    <p>&copy; 2024 Şiddete Dur de. Tüm hakları saklıdır.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,84 +1,569 @@
 [
-  { "il": "Adana", "bolge": "Akdeniz Bölgesi", "olay": 15, "olu": 10, "yarali": 8 },
-  { "il": "Adıyaman", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Afyonkarahisar", "bolge": "Ege Bölgesi", "olay": 5, "olu": 4, "yarali": 3 },
-  { "il": "Ağrı", "bolge": "Doğu Anadolu Bölgesi", "olay": 7, "olu": 5, "yarali": 4 },
-  { "il": "Aksaray", "bolge": "İç Anadolu Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Amasya", "bolge": "Karadeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Ankara", "bolge": "İç Anadolu Bölgesi", "olay": 20, "olu": 15, "yarali": 10 },
-  { "il": "Antalya", "bolge": "Akdeniz Bölgesi", "olay": 20, "olu": 15, "yarali": 10 },
-  { "il": "Ardahan", "bolge": "Doğu Anadolu Bölgesi", "olay": 3, "olu": 2, "yarali": 2 },
-  { "il": "Artvin", "bolge": "Karadeniz Bölgesi", "olay": 3, "olu": 2, "yarali": 2 },
-  { "il": "Aydın", "bolge": "Ege Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Balıkesir", "bolge": "Marmara Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Bartın", "bolge": "Karadeniz Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Batman", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 8, "olu": 5, "yarali": 4 },
-  { "il": "Bayburt", "bolge": "Karadeniz Bölgesi", "olay": 2, "olu": 1, "yarali": 1 },
-  { "il": "Bilecik", "bolge": "Marmara Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Bingöl", "bolge": "Doğu Anadolu Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Bitlis", "bolge": "Doğu Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Bolu", "bolge": "Karadeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Burdur", "bolge": "Akdeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Bursa", "bolge": "Marmara Bölgesi", "olay": 18, "olu": 12, "yarali": 10 },
-  { "il": "Çanakkale", "bolge": "Marmara Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Çankırı", "bolge": "İç Anadolu Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Çorum", "bolge": "Karadeniz Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Denizli", "bolge": "Ege Bölgesi", "olay": 8, "olu": 6, "yarali": 4 },
-  { "il": "Diyarbakır", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 15, "olu": 10, "yarali": 7 },
-  { "il": "Düzce", "bolge": "Karadeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Edirne", "bolge": "Marmara Bölgesi", "olay": 7, "olu": 4, "yarali": 3 },
-  { "il": "Elazığ", "bolge": "Doğu Anadolu Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Erzincan", "bolge": "Doğu Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Erzurum", "bolge": "Doğu Anadolu Bölgesi", "olay": 8, "olu": 6, "yarali": 4 },
-  { "il": "Eskişehir", "bolge": "İç Anadolu Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Gaziantep", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 15, "olu": 10, "yarali": 8 },
-  { "il": "Giresun", "bolge": "Karadeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Gümüşhane", "bolge": "Karadeniz Bölgesi", "olay": 3, "olu": 2, "yarali": 1 },
-  { "il": "Hakkari", "bolge": "Doğu Anadolu Bölgesi", "olay": 4, "olu": 3, "yarali": 2 },
-  { "il": "Hatay", "bolge": "Akdeniz Bölgesi", "olay": 10, "olu": 8, "yarali": 5 },
-  { "il": "Iğdır", "bolge": "Doğu Anadolu Bölgesi", "olay": 3, "olu": 2, "yarali": 2 },
-  { "il": "Isparta", "bolge": "Akdeniz Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "İstanbul", "bolge": "Marmara Bölgesi", "olay": 50, "olu": 35, "yarali": 25 },
-  { "il": "İzmir", "bolge": "Ege Bölgesi", "olay": 25, "olu": 18, "yarali": 12 },
-  { "il": "Kahramanmaraş", "bolge": "Akdeniz Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Karabük", "bolge": "Karadeniz Bölgesi", "olay": 4, "olu": 3, "yarali": 2 },
-  { "il": "Karaman", "bolge": "İç Anadolu Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Kars", "bolge": "Doğu Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Kastamonu", "bolge": "Karadeniz Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Kayseri", "bolge": "İç Anadolu Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Kırıkkale", "bolge": "İç Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Kırklareli", "bolge": "Marmara Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Kırşehir", "bolge": "İç Anadolu Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Kilis", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 3, "olu": 2, "yarali": 1 },
-  { "il": "Kocaeli", "bolge": "Marmara Bölgesi", "olay": 18, "olu": 12, "yarali": 10 },
-  { "il": "Konya", "bolge": "İç Anadolu Bölgesi", "olay": 20, "olu": 15, "yarali": 10 },
-  { "il": "Kütahya", "bolge": "Ege Bölgesi", "olay": 7, "olu": 5, "yarali": 4 },
-  { "il": "Malatya", "bolge": "Doğu Anadolu Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Manisa", "bolge": "Ege Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Mardin", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 8, "olu": 5, "yarali": 4 },
-  { "il": "Mersin", "bolge": "Akdeniz Bölgesi", "olay": 15, "olu": 10, "yarali": 8 },
-  { "il": "Muğla", "bolge": "Ege Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Muş", "bolge": "Doğu Anadolu Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Nevşehir", "bolge": "İç Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Niğde", "bolge": "İç Anadolu Bölgesi", "olay": 4, "olu": 3, "yarali": 2 },
-  { "il": "Ordu", "bolge": "Karadeniz Bölgesi", "olay": 7, "olu": 5, "yarali": 4 },
-  { "il": "Osmaniye", "bolge": "Akdeniz Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Rize", "bolge": "Karadeniz Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Sakarya", "bolge": "Marmara Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Samsun", "bolge": "Karadeniz Bölgesi", "olay": 12, "olu": 8, "yarali": 6 },
-  { "il": "Siirt", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 6, "olu": 4, "yarali": 3 },
-  { "il": "Sinop", "bolge": "Karadeniz Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Sivas", "bolge": "İç Anadolu Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Şanlıurfa", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 18, "olu": 12, "yarali": 10 },
-  { "il": "Şırnak", "bolge": "Güneydoğu Anadolu Bölgesi", "olay": 7, "olu": 5, "yarali": 4 },
-  { "il": "Tekirdağ", "bolge": "Marmara Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Tokat", "bolge": "Karadeniz Bölgesi", "olay": 8, "olu": 6, "yarali": 4 },
-  { "il": "Trabzon", "bolge": "Karadeniz Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Tunceli", "bolge": "Doğu Anadolu Bölgesi", "olay": 4, "olu": 3, "yarali": 2 },
-  { "il": "Uşak", "bolge": "Ege Bölgesi", "olay": 5, "olu": 3, "yarali": 2 },
-  { "il": "Van", "bolge": "Doğu Anadolu Bölgesi", "olay": 10, "olu": 7, "yarali": 5 },
-  { "il": "Yalova", "bolge": "Marmara Bölgesi", "olay": 4, "olu": 2, "yarali": 2 },
-  { "il": "Yozgat", "bolge": "İç Anadolu Bölgesi", "olay": 5, "olu": 3, "yarali": 3 },
-  { "il": "Zonguldak", "bolge": "Karadeniz Bölgesi", "olay": 6, "olu": 4, "yarali": 3 }
-  ]
-  
+  {
+    "il": "Adana",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 15,
+    "olu": 10,
+    "yarali": 8
+  },
+  {
+    "il": "Adıyaman",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Afyonkarahisar",
+    "bolge": "Ege Bölgesi",
+    "olay": 5,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Ağrı",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 7,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Aksaray",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Amasya",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Ankara",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 20,
+    "olu": 15,
+    "yarali": 10
+  },
+  {
+    "il": "Antalya",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 20,
+    "olu": 15,
+    "yarali": 10
+  },
+  {
+    "il": "Ardahan",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 3,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Artvin",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 3,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Aydın",
+    "bolge": "Ege Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Balıkesir",
+    "bolge": "Marmara Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Bartın",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Batman",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 8,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Bayburt",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 2,
+    "olu": 1,
+    "yarali": 1
+  },
+  {
+    "il": "Bilecik",
+    "bolge": "Marmara Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Bingöl",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Bitlis",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Bolu",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Burdur",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Bursa",
+    "bolge": "Marmara Bölgesi",
+    "olay": 18,
+    "olu": 12,
+    "yarali": 10
+  },
+  {
+    "il": "Çanakkale",
+    "bolge": "Marmara Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Çankırı",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Çorum",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Denizli",
+    "bolge": "Ege Bölgesi",
+    "olay": 8,
+    "olu": 6,
+    "yarali": 4
+  },
+  {
+    "il": "Diyarbakır",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 15,
+    "olu": 10,
+    "yarali": 7
+  },
+  {
+    "il": "Düzce",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Edirne",
+    "bolge": "Marmara Bölgesi",
+    "olay": 7,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Elazığ",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Erzincan",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Erzurum",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 8,
+    "olu": 6,
+    "yarali": 4
+  },
+  {
+    "il": "Eskişehir",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Gaziantep",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 15,
+    "olu": 10,
+    "yarali": 8
+  },
+  {
+    "il": "Giresun",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Gümüşhane",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 3,
+    "olu": 2,
+    "yarali": 1
+  },
+  {
+    "il": "Hakkari",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Hatay",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 10,
+    "olu": 8,
+    "yarali": 5
+  },
+  {
+    "il": "Iğdır",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 3,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Isparta",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "İstanbul",
+    "bolge": "Marmara Bölgesi",
+    "olay": 50,
+    "olu": 35,
+    "yarali": 25
+  },
+  {
+    "il": "İzmir",
+    "bolge": "Ege Bölgesi",
+    "olay": 25,
+    "olu": 18,
+    "yarali": 12
+  },
+  {
+    "il": "Kahramanmaraş",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Karabük",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 4,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Karaman",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Kars",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Kastamonu",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Kayseri",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Kırıkkale",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Kırklareli",
+    "bolge": "Marmara Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Kırşehir",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Kilis",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 3,
+    "olu": 2,
+    "yarali": 1
+  },
+  {
+    "il": "Kocaeli",
+    "bolge": "Marmara Bölgesi",
+    "olay": 18,
+    "olu": 12,
+    "yarali": 10
+  },
+  {
+    "il": "Konya",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 20,
+    "olu": 15,
+    "yarali": 10
+  },
+  {
+    "il": "Kütahya",
+    "bolge": "Ege Bölgesi",
+    "olay": 7,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Malatya",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Manisa",
+    "bolge": "Ege Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Mardin",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 8,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Mersin",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 15,
+    "olu": 10,
+    "yarali": 8
+  },
+  {
+    "il": "Muğla",
+    "bolge": "Ege Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Muş",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Nevşehir",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Niğde",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Ordu",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 7,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Osmaniye",
+    "bolge": "Akdeniz Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Rize",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Sakarya",
+    "bolge": "Marmara Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Samsun",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 12,
+    "olu": 8,
+    "yarali": 6
+  },
+  {
+    "il": "Siirt",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  },
+  {
+    "il": "Sinop",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Sivas",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Şanlıurfa",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 18,
+    "olu": 12,
+    "yarali": 10
+  },
+  {
+    "il": "Şırnak",
+    "bolge": "Güneydoğu Anadolu Bölgesi",
+    "olay": 7,
+    "olu": 5,
+    "yarali": 4
+  },
+  {
+    "il": "Tekirdağ",
+    "bolge": "Marmara Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Tokat",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 8,
+    "olu": 6,
+    "yarali": 4
+  },
+  {
+    "il": "Trabzon",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Tunceli",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 4,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Uşak",
+    "bolge": "Ege Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 2
+  },
+  {
+    "il": "Van",
+    "bolge": "Doğu Anadolu Bölgesi",
+    "olay": 10,
+    "olu": 7,
+    "yarali": 5
+  },
+  {
+    "il": "Yalova",
+    "bolge": "Marmara Bölgesi",
+    "olay": 4,
+    "olu": 2,
+    "yarali": 2
+  },
+  {
+    "il": "Yozgat",
+    "bolge": "İç Anadolu Bölgesi",
+    "olay": 5,
+    "olu": 3,
+    "yarali": 3
+  },
+  {
+    "il": "Zonguldak",
+    "bolge": "Karadeniz Bölgesi",
+    "olay": 6,
+    "olu": 4,
+    "yarali": 3
+  }
+]
