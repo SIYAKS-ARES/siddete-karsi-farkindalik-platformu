@@ -3,15 +3,10 @@ const fs = require('fs');
 const app = express();
 const port = 3000;
 
-
 app.use(express.json());
-
-
 app.get('/', (req, res) => {
   res.send('Şiddet Haritası API Sunucusu Çalışıyor!');
 });
-
-
 app.get('/veri', (req, res) => {
 
   fs.readFile('./data/data.json', 'utf8', (err, data) => {
@@ -25,8 +20,6 @@ app.get('/veri', (req, res) => {
     res.json(shiddetVerisi);
   });
 });
-
-
 app.get('/api/veriler', (req, res) => {
   fs.readFile('data.json', 'utf8', (err, data) => {
     if (err) {
@@ -35,8 +28,6 @@ app.get('/api/veriler', (req, res) => {
     res.json(JSON.parse(data));
   });
 });
-
-
 app.post('/api/veriler', (req, res) => {
   const yeniVeri = req.body;
   fs.readFile('data.json', 'utf8', (err, data) => {
@@ -55,9 +46,6 @@ app.post('/api/veriler', (req, res) => {
     });
   });
 });
-
-
 app.listen(port, () => {
   console.log(`Sunucu http://localhost:${port} adresinde dinliyor...`);
 });
-
