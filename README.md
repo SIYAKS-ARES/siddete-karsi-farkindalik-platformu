@@ -77,9 +77,10 @@ Projeyi yerel bir ortamda çalıştırmak için şu adımları izleyin:
 
 2. Proje dizinine gidin:
 
-cd siddete-karsi-farkindalik-platformu
+   ```bash
+   cd siddete-karsi-farkindalik-platformu
 
-3. Tarayıcıda çalıştırmak için index.html dosyasını açın.
+3. Tarayıcıda çalıştırmak için anaSayfa.html dosyasını açın.
 
 🌟 Katkı Sağlama
 
@@ -89,15 +90,18 @@ Bu projeye katkı sağlamak isterseniz lütfen şu adımları izleyin:
 
 2. Yeni bir dal oluşturun:
 
-git checkout -b ozellik-adi
+   ```bash
+   git checkout -b ozellik-adi
 
 3. Değişikliklerinizi yapın ve commit edin:
 
-git commit -m "Yeni özellik eklendi"
+   ```bash
+   git commit -m "Yeni özellik eklendi"
 
 4. Dalınızı gönderin:
 
-git push origin ozellik-adi
+   ```bash
+   git push origin ozellik-adi
 
 5. Pull Request oluşturun.
 
