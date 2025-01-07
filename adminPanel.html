@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-  <title>Admin Paneli</title>
-  <link rel="web site icon" href="resim/kadinCinayet.jpeg" />
-  <style>
-    html,
-    body {
-      background: #F4F3F4;
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <title>Admin Paneli</title>
+    <link rel="web site icon" href="resim/kadinCinayet.jpeg" />
+    <style>
+        html,body{
+      background:#F4F3F4 ;
       height: 100vh;
-    }
-
-    .sidebar {
-      height: 100vh;
-      width: 250px;
-      background-color: #800080;
-      color: white;
-      position: fixed;
-      padding-top: 20px;
-    }
-
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 10px 15px;
-      margin: 5px 0;
-      border-radius: 5px;
-    }
-
-    .sidebar a:hover {
-      background-color: #eccdec;
-      color: #800080;
-    }
-
-    .content {
-      margin-left: 260px;
-      padding: 20px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="sidebar">
-    <h3 class="text-center">Admin Paneli</h3>
-    <a href="#kullanici">Kullanıcı Yönetimi</a>
-    <a href="#sikayet">Şikayet Yönetimi</a>
-    <a href="#yardim">Acil Yardım</a>
-  </div>
+     }
+      .sidebar {
+        height: 100vh;
+        width: 250px;
+        background-color: #800080;
+        color: white;
+        position: fixed;
+        padding-top: 20px;
+      }
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+      }
+      .sidebar a:hover {
+        background-color: #eccdec;
+        color: #800080;
+      }
+      .content {
+        margin-left: 260px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3 class="text-center">Admin Paneli</h3>
+      <a href="#kullanici">Kullanıcı Yönetimi</a>
+      <a href="#sikayet">Şikayet Yönetimi</a>
+      <a href="#yardim">Acil Yardım</a>
+    </div>
 
   <div class="content">
     <section id="kullanici">
@@ -218,55 +214,55 @@
           }
         });
 
-        // Modalı kapat
-        $("#editModal").modal("hide");
-      }
-    </script>
-    <section id="sikayet">
-      <h2>Şikayet Yönetimi</h2>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Şikayet No</th>
-            <th>Şikayet Eden</th>
-            <th>Şikayet</th>
-            <th>Tarih</th>
-            <th>Durum</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>101</td>
-            <td>Fatma Aksoy</td>
-            <td>Tehdit mesajı aldım.</td>
-            <td>30/12/2024</td>
-            <td>
-              <select class="form-control form-control-sm">
-                <option>Beklemede</option>
-                <option>İnceleniyor</option>
-                <option>Çözüldü</option>
-              </select>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="istatistik">
-      <h2>İstatistikler</h2>
-      <p>Toplam Kullanıcı: 50</p>
-      <p>Gelen Şikayetler: 15</p>
-      <p>Çözülen Şikayetler: 10</p>
-    </section>
-  </div>
-  <script>
-    function loadComplaints() {
-      const complaints = JSON.parse(localStorage.getItem("complaints")) || [];
-      const complaintsTable = document.getElementById("complaintsTable");
-      complaintsTable.innerHTML = "";
+          // Modalı kapat
+          $("#editModal").modal("hide");
+        }
+      </script>
+      <section id="sikayet">
+        <h2>Şikayet Yönetimi</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Şikayet No</th>
+              <th>Şikayet Eden</th>
+              <th>Şikayet</th>
+              <th>Tarih</th>
+              <th>Durum</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Fatma Aksoy</td>
+              <td>Tehdit mesajı aldım.</td>
+              <td>30/12/2024</td>
+              <td>
+                <select class="form-control form-control-sm">
+                  <option>Beklemede</option>
+                  <option>İnceleniyor</option>
+                  <option>Çözüldü</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="istatistik">
+        <h2>İstatistikler</h2>
+        <p>Toplam Kullanıcı: 50</p>
+        <p>Gelen Şikayetler: 15</p>
+        <p>Çözülen Şikayetler: 10</p>
+      </section>
+    </div>
+    <script>
+      function loadComplaints() {
+        const complaints = JSON.parse(localStorage.getItem("complaints")) || [];
+        const complaintsTable = document.getElementById("complaintsTable");
+        complaintsTable.innerHTML = "";
 
-      complaints.forEach((complaint, index) => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
+        complaints.forEach((complaint, index) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
             <td>${complaint.tcNumber}</td>
             <td>${complaint.email}</td>
             <td>${complaint.complaintText}</td>
@@ -277,21 +273,20 @@
                 <button class="btn btn-danger btn-sm" onclick="deleteComplaint(${index})">Sil</button>
             </td>
         `;
-        complaintsTable.appendChild(row);
-      });
-    }
-    document.addEventListener("DOMContentLoaded", loadComplaints);
-    function deleteComplaint(index) {
-      const complaints = JSON.parse(localStorage.getItem("complaints")) || [];
-      complaints.splice(index, 1);
-      localStorage.setItem("complaints", JSON.stringify(complaints));
-      loadComplaints();
-      alert("Şikayet silindi.");
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-</body>
-
+          complaintsTable.appendChild(row);
+        });
+      }
+      document.addEventListener("DOMContentLoaded", loadComplaints);
+      function deleteComplaint(index) {
+        const complaints = JSON.parse(localStorage.getItem("complaints")) || [];
+        complaints.splice(index, 1);
+        localStorage.setItem("complaints", JSON.stringify(complaints));
+        loadComplaints();
+        alert("Şikayet silindi.");
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>

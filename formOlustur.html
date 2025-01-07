@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-  <title>Şikayet Formu</title>
-  <link rel="web site icon" href="resim/kadinCinayet.jpeg" />
-  <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      background-color: #f4f3f4;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <title>Şikayet Formu</title>
+    <link rel="web site icon" href="resim/kadinCinayet.jpeg" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        background-color: #f4f3f4;
+      }
 
     .bg {
       background-color: #ffff;
@@ -151,52 +154,52 @@
       .addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const tcNumber = document.getElementById("tcNumber").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const complaintText = document
-          .getElementById("complaintText")
-          .value.trim();
+          const tcNumber = document.getElementById("tcNumber").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const complaintText = document
+            .getElementById("complaintText")
+            .value.trim();
 
-        if (!tcNumber || !email || !complaintText) {
-          alert("Tüm alanları doldurunuz!");
-          return;
-        }
+          if (!tcNumber || !email || !complaintText) {
+            alert("Tüm alanları doldurunuz!");
+            return;
+          }
 
-        if (tcNumber.length !== 11 || isNaN(tcNumber)) {
-          alert("Geçerli bir TC Kimlik Numarası giriniz!");
-          return;
-        }
+          if (tcNumber.length !== 11 || isNaN(tcNumber)) {
+            alert("Geçerli bir TC Kimlik Numarası giriniz!");
+            return;
+          }
 
-        const currentTime = new Date().getTime();
-        const existingComplaints =
-          JSON.parse(localStorage.getItem("complaints")) || [];
+          const currentTime = new Date().getTime();
+          const existingComplaints =
+            JSON.parse(localStorage.getItem("complaints")) || [];
 
-        const lastComplaint = existingComplaints.find(
-          (complaint) => complaint.tcNumber === tcNumber
-        );
-
-        if (
-          lastComplaint &&
-          currentTime - lastComplaint.timestamp < 7 * 24 * 60 * 60 * 1000
-        ) {
-          alert(
-            "Aynı TC Kimlik numarasıyla bir hafta içinde yalnızca bir kez şikayet oluşturabilirsiniz."
+          const lastComplaint = existingComplaints.find(
+            (complaint) => complaint.tcNumber === tcNumber
           );
-          return;
-        }
-        //Yeni şikayeti ekle
-        const newComplaint = {
-          tcNumber,
-          email,
-          complaintText,
-          timestamp: currentTime,
-        };
 
-        existingComplaints.push(newComplaint);
-        localStorage.setItem(
-          "complaints",
-          JSON.stringify(existingComplaints)
-        );
+          if (
+            lastComplaint &&
+            currentTime - lastComplaint.timestamp < 7 * 24 * 60 * 60 * 1000
+          ) {
+            alert(
+              "Aynı TC Kimlik numarasıyla bir hafta içinde yalnızca bir kez şikayet oluşturabilirsiniz."
+            );
+            return;
+          }
+          //Yeni şikayeti ekle
+          const newComplaint = {
+            tcNumber,
+            email,
+            complaintText,
+            timestamp: currentTime,
+          };
+
+          existingComplaints.push(newComplaint);
+          localStorage.setItem(
+            "complaints",
+            JSON.stringify(existingComplaints)
+          );
 
         alert("Şikayetiniz başarıyla gönderildi!");
         this.reset();
